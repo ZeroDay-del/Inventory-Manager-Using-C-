@@ -1,9 +1,11 @@
 #include "Inventory.h"
+#include "Product.h"
 
 Inventory::Inventory()
 {
     sizeI = 0;
     capacity = 3;
+    Product* products;
 }
 
 Inventory::~Inventory()

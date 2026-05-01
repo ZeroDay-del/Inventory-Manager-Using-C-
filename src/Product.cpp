@@ -1,10 +1,14 @@
 #include "Product.h"
+#include <string>
+#include <iostream>
 
-Product::Product(int id, std::string name, double price)
+using namespace std;
+Product::Product(std::string name, double price, int quantity)
 {
-    this->id = id;
-    this->name = name;
-    this->price = price;
+    productId = value ++;
+    this->productName = name;
+    this->productPrice = price;
+    this->productQuantity = quantity;
 }
 
 Product::~Product()
@@ -12,28 +16,51 @@ Product::~Product()
     //dtor
 }
 
-
 void Product::setID(int id){
-    this->id = id;
+    this->productId = id;
 }
 
 void Product::setName(std::string name){
-    this->name = name;
+    this->productName = name;
 }
 
 void Product::setPrice(double price){
-    this->price = price;
+    this->productPrice = price;
 }
 
-int Product::getID()const{
-    return this->id;
+int Product::getproductID()const{
+    return this->productId;
 }
 
 
 std::string Product::getName()const{
-    return this->name;
+    return this->productName;
 }
 
 double Product::getPrice()const{
-    return this->price;
+    return this->productPrice;
+}
+
+string Product::getExpiryDate(){
+    return productExpiryDate;
+}
+
+bool Product::isExpired(){
+    if(productExpiryDate == "non"){
+        return false;
+    }
+
+    return true;
+}
+
+void Product::updateQuantity(int number){
+    if(number > 0)productQuantity = number;
+}
+
+void Product::displayInfo() const{
+    std::cout << "Product ID: " << productId << std::endl;
+    std::cout << "Name: " << productName << std::endl;
+    std::cout << "Price: R" << productPrice << std::endl;
+    std::cout << "Quantity: " << productQuantity << std::endl;
+    std::cout << "------------------------" << std::endl;
 }

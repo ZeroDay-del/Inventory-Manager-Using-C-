@@ -17,6 +17,7 @@ class Inventory
         Product *prod;
         int sizeI;
         int capacity;
+
 };
 
 #endif // INVENTORY_H

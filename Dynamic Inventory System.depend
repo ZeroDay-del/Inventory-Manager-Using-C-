@@ -5,6 +5,13 @@
 1775173049 source:c:\users\anoth\onedrive\documents\c++ projects\dynamic inventory system\src\product.cpp
 	"Product.h"
 
-1775172931 c:\users\anoth\onedrive\documents\c++ projects\dynamic inventory system\include\product.h
+1775262771 c:\users\anoth\onedrive\documents\c++ projects\dynamic inventory system\include\product.h
 	<string>
+
+1775262449 source:c:\users\anoth\onedrive\documents\c++ projects\dynamic inventory system\src\inventory.cpp
+	"Inventory.h"
+	"Product.h"
+
+1775262456 c:\users\anoth\onedrive\documents\c++ projects\dynamic inventory system\include\inventory.h
+	"product.h"
 
